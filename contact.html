@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="container">
+            <div><a href="index.html" class="index">NIZZA WISE</a></div>
+            <div><a href="about.html"  class="about">ABOUT</a></div>
+            <div><a href="portfolio.html" class="portfolio">PORTFOLIO</a></div>
+            <div><a href="contact.html" class="contact">CONTACT</a></div>
+        </header>
+        <hr>
+            <div class="form">
+                <fieldset>
+                <legend>Send me a message!
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 13, 201, 1);transform: ;msFilter:;"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg></legend>
+                <div>
+                    <form id="form">
+                        <label for="text" id="name">Full Name:</label>
+                        <input type="text" id="fname" placeholder="Juan Dela Cruz" required>
+                        <label for="text" id="email">Email:</label>
+                        <input type="text" id="email" placeholder="abc@def.com" required>
+                        <label for="number" id="number">Contact Number:</label>
+                        <input type="tel" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                        <br>
+                      <input type="submit" id="submit">
+                </div>
+            </fieldset>     
+            </div>
+            <hr>
+            <footer>
+                <br>
+                    <p>
+                    No Copyright - My Personal Website
+                    </p>
+                    <a href="index.html" class="footer">Nizza Wise</a>
+                    <p>2023</p>
+            </footer>
+    
+</body>
+<script src="contact.js"></script>
+</html>

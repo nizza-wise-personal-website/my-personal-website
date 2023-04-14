@@ -17,10 +17,9 @@ a.about:link {
     background-color: rgba(201, 15, 201, 0.692);
     border-radius: 7px;
     color: black;
-    margin-left: 65vw;
+    margin-left: 55vw;
     font-size: 2vw;
-    padding: .3%;
-    
+    padding: .3%;   
 }
 a.about:hover {
     background-color: rgba(201, 15, 201, 0.429);
@@ -37,7 +36,23 @@ a.portfolio:link {
 a.portfolio:hover {
     background-color: rgba(201, 15, 201, 0.429);
 }
+a.contact:link {
+    text-decoration: none;
+    background-color: rgba(201, 15, 201, 0.692);
+    border-radius: 7px;
+    color: black;
+    margin-left: 2vw;
+    font-size: 2vw;
+    padding: .3%;
+    
+}
+a.contact:hover {
+    background-color: #c70fc76d;
+}
+
 /* BODY */
+
+/* index.html */
 body {
     background-color: rgba(234, 181, 234, 0.726);
 }
@@ -65,19 +80,67 @@ hr {
     text-align: center;
     font-size: 2vw;
 }
+
+/* about.html */
 .gallery-container {
     display: flex;
+    flex-direction:row;
+    margin-left: 10%;
 }
 img {
     width: 20vw;
     height: 20vw;
     position: relative;
     border-radius: 10%;
-    margin: 2%;
+    border: 2px solid #c90fc9b0;
+    margin: 3px;
 }
 .description {
     margin-left: 2%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bold;
 }
+
+/* contact.html */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 50vw;
+    min-width: 30vw;
+    width: 80vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+label, legend {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+input, textarea {
+    background-color: rgba(195, 128, 251, 0.692);
+    border: 2px solid rgba(87, 9, 151, 0.692);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+textarea {
+    width: 75%;
+    margin-top: 0.5rem;
+}
+input[type="submit"] {
+    display: block;
+    width: 25%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgba(87, 9, 151, 0.692);
+    border-color: white;
+    min-width: 300px;
+  }
 
 /* FOOTER */
 footer {
